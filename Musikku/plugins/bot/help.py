@@ -53,11 +53,11 @@ async def helper_private(
         if update.message.photo:
             await update.message.delete()
             await update.message.reply_text(
-                _["help_1"], reply_markup=keyboard
+                _["mhelp_1"], reply_markup=keyboard
             )
         else:
             await update.edit_message_text(
-                _["help_1"], reply_markup=keyboard
+                _["mhelp_1"], reply_markup=keyboard
             )
     else:
         chat_id = update.chat.id
@@ -69,7 +69,7 @@ async def helper_private(
         language = await get_lang(chat_id)
         _ = get_string(language)
         keyboard = help_pannel(_)
-        await update.reply_text(_["help_1"], reply_markup=keyboard)
+        await update.reply_text(_["mhelp_1"], reply_markup=keyboard)
 
 
 @app.on_message(
@@ -82,7 +82,7 @@ async def helper_private(
 async def help_com_group(client, message: Message, _):
     keyboard = private_help_panel(_)
     await message.reply_text(
-        _["help_2"], reply_markup=InlineKeyboardMarkup(keyboard)
+        _["mhelp_2"], reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
 
@@ -99,7 +99,7 @@ async def helper_cb(client, CallbackQuery, _):
             )
         else:
             await CallbackQuery.edit_message_text(
-                helpers.HELP_5, reply_markup=keyboard
+                helpers.MHELP_5, reply_markup=keyboard
             )
             return await CallbackQuery.answer()
     try:
@@ -108,17 +108,17 @@ async def helper_cb(client, CallbackQuery, _):
         pass
     if cb == "hb1":
         await CallbackQuery.edit_message_text(
-            helpers.HELP_1, reply_markup=keyboard
+            helpers.MHELP_1, reply_markup=keyboard
         )
     elif cb == "hb2":
         await CallbackQuery.edit_message_text(
-            helpers.HELP_2, reply_markup=keyboard
+            helpers.MHELP_2, reply_markup=keyboard
         )
     elif cb == "hb3":
         await CallbackQuery.edit_message_text(
-            helpers.HELP_3, reply_markup=keyboard
+            helpers.MHELP_3, reply_markup=keyboard
         )
     elif cb == "hb4":
         await CallbackQuery.edit_message_text(
-            helpers.HELP_4, reply_markup=keyboard
+            helpers.MHELP_4, reply_markup=keyboard
         )

@@ -8,7 +8,7 @@
 # All rights reserved.
 
 
-HELP_1 = """✅**<u>Perintah Admin:</u>**
+MHELP_1 = """✅**<u>Perintah Admin:</u>**
 
 **c** adalah singkatan dari pemutaran saluran.
 
@@ -36,7 +36,7 @@ Pengguna Auth dapat menggunakan perintah admin tanpa hak admin di obrolan Anda.
 /authusers - Periksa DAFTAR AUTH grup."""
 
 
-HELP_2 = """✅<u>**Perintah Mainkan:**</u>
+MHELP_2 = """✅<u>**Perintah Mainkan:**</u>
 
 **cplay** atau **cstream **singkatan dari channel play.
 **vplay** adalah singkatan dari pemutaran video.
@@ -54,7 +54,7 @@ HELP_2 = """✅<u>**Perintah Mainkan:**</u>
 /play - Mulai mainkan Daftar Putar Tersimpan Anda dari Server."""
 
 
-HELP_3 = """✅<u>**Perintah Bot:**</u>
+MHELP_3 = """✅<u>**Perintah Bot:**</u>
 
 /stats - Dapatkan Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat, dll.
 
@@ -67,7 +67,7 @@ HELP_3 = """✅<u>**Perintah Bot:**</u>
 **c** adalah singkatan dari pemutaran saluran.
 /queue atau /cqueue- Periksa Daftar Antrian Musik."""
 
-HELP_4 = """✅<u>**Perintah Ekstra:**</u>
+MHELP_4 = """✅<u>**Perintah Ekstra:**</u>
 /start - Mulai Bot Musik.
 /help - Dapatkan Menu Helper Perintah dengan penjelasan rinci tentang perintah.
 /ping- Ping Bot dan periksa Ram, Cpu dll statistik Bot.
@@ -99,7 +99,7 @@ HELP_4 = """✅<u>**Perintah Ekstra:**</u>
 
 3️⃣ **Tipe Putar** [ Semua Orang atau Admin] - Jika admin, hanya admin yang ada di grup yang dapat memutar musik di obrolan suara."""
 
-HELP_5 = """🔰**<u>TAMBAH & HAPUS PENGGUNA SUDO :</u>**
+MHELP_5 = """🔰**<u>TAMBAH & HAPUS PENGGUNA SUDO :</u>**
 /addsudo [Nama pengguna atau Balas ke pengguna]
 /delsudo [Nama pengguna atau Balas ke pengguna]
 
